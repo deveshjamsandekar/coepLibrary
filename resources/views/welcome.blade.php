@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome to COEP Library System Again
+                    Welcome to COEP Library
                 </div>
 
                 <div class="links">
