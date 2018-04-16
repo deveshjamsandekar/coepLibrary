@@ -14,7 +14,7 @@ class UpdateStudentsTable extends Migration
     public function up()
     {
         Schema::table('students', function(Blueprint $table) {
-          $table->string('amount_left');
+          $table->string('amount_left')->nullable();
         });
     }
 
