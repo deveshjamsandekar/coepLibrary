@@ -15,7 +15,6 @@ class BooksController extends Controller
   /*
  * TO get the list of books
  */
-
   public function index()
   {
     $books = Book::all();
