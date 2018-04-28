@@ -107,5 +107,4 @@ Route::get('/ibutton', function() {
   			</tr>
   		</table>
   	</form>";
-
 });

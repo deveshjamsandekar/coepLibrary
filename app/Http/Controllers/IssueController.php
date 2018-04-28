@@ -76,7 +76,7 @@ class IssueController extends Controller
       $student->amount_left = $student->amount_left - (2*$late);
       //$student->update();
     }
-
+    $late=$current->diffInDays($returndate);
     $deposit = $student->amount_left;
 
     return view('issue.details', compact('book','issuedate','returndate','late'));
