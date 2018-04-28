@@ -65,7 +65,7 @@
                             <label for="pass_key" class="col-md-4 control-label">Pass Key</label>
 
                             <div class="col-md-6">
-                                <input id="pass_key" type="same" class="form-control" name="pass_key" required>
+                                <input id="pass_key" type="password" class="form-control" name="pass_key" required>
                             </div>
                         </div>
 
@@ -76,7 +76,7 @@
                                 </button>
                             </div>
                         </div>
-                    
+
                     </form>
                 </div>
             </div>
