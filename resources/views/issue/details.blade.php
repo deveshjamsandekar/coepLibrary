@@ -33,7 +33,10 @@
               <td><img class="img-upload" src="/storage/uploads/{{ $book->students[0]["profile_img"]}}" width=100 height=100></td>
               <td>{{ $issuedate->format('l, jS F Y')}}</td>
               <td>{{ $returndate->format('l, jS F Y')}}</td>
+              @if($current>returndate)
               <td>{{ $late}} Days</td>
+              @else<td></td>
+              @endif
               <form method="POST" action="/books/return/{{ $request=$book->book_id }}">
 
                 {{ csrf_field() }}
