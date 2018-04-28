@@ -16,6 +16,5 @@ public function send()
   $message->from('librarycoep@gmail.com','COEP Library');
   });  //
 
-  // Mail::to('kvjkumr@gmail.com')->send(new WelComeMail);
 }
 }
