@@ -26,7 +26,7 @@ class IssueController extends Controller
   {
    //$student = Student::where('ibutton_no','=',$request->ibutton_no)->orWhere('mis_no','=',$request->mis_no)->first();
    $student = Student::where('mis_no', '=', $request->mis_no)->orWhere('ibutton_no','=',$request->ibutton_no)->first();
-   //if($book->book_status=="Issued")
+
    $count=$student->books->count();
    return view('issue.studentdetails',compact('student','count'));
 
