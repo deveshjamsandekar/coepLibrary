@@ -15,6 +15,5 @@ public function send()
   $message->to('deveshj23@gmail.com','Devesh')->subject('Book Issued');
   $message->from('librarycoep@gmail.com','COEP Library');
 });  
-
 }
 }
