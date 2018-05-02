@@ -62,6 +62,10 @@ Route::post('/profile/delete','SessionsController@delete');
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+Route::resource('codes', 'CodesController');
+
+
+
 Route::get('/ibutton', function() {
   function microtime_float()
   {
