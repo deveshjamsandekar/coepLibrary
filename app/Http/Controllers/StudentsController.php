@@ -98,7 +98,7 @@ class StudentsController extends Controller
       //upload image
       $request->file('profile_img')->storeAs('public\uploads',$fileNameToStore);
       //Deleting old file
-      unlink(public_path('\storage\uploads\\').$oldFilename);
+      unlink(public_path('/storage/uploads/') . $oldFilename);
       //updating new file name
       $student->update($request->all());
       $student->profile_img=$fileNameToStore;
