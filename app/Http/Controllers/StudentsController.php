@@ -128,7 +128,7 @@ class StudentsController extends Controller
 	 */
 	public function destroy(Student $student)
 	{
-    unlink(public_path('\storage\uploads\\').$student->profile_img);
+    unlink(public_path('/storage/uploads/').$student->profile_img);
 		$student->delete();
 		return redirect('/students');
 	}
