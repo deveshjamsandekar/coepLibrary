@@ -33,7 +33,8 @@
 		        <th>MIS NO.</th>
 		        <th>Gender</th>
 		        <th>Email</th>
-		        <th>MobileNo</th>
+		        <th>Mobile No</th>
+            <th>IButton No</th>
             <th>Profile Image</th>
             <th>Books Issued</th>
             <th>Deposit Remaining</th>
@@ -49,6 +50,7 @@
 			    		<td>{{ $student->gender }}</td>
 			    		<td>{{ $student->email }}</td>
 			    		<td>{{ $student->mobile_no }}</td>
+              <td>{{ $student->ibutton_no }}</td>
               <td><img class="img-upload" src="/storage/uploads/{{ $student->profile_img }}" width=100 height=100></td>
               <td><a href="/students/{{$student->id}}/bookdetails">{{$student->books->count()}}</a></td>
               <td> {{ $student->amount_left }}</td>
