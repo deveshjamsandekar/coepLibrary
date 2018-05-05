@@ -38,7 +38,7 @@
 					  </div>
             <div class="form-group">
 					    <label for="ibutton_no">IButton No.</label>
-					    <input type="text" class="form-control" name="ibutton_no"  placeholder="Enter IButton No" >
+					    <input type="text" class="form-control" name="ibutton_no" value="{{ $code->code }}" placeholder="Enter IButton No" >
 					  </div>
             <div class="form-group">
 					    <label for="profile_img">Profile Image</label>

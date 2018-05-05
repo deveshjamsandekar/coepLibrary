@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 /*Models*/
 use App\Student;
 use App\Book;
+use App\Code;
 
 class StudentsController extends Controller
 {
@@ -29,7 +30,8 @@ class StudentsController extends Controller
 
   public function create()
 	{
-		return view('students.register');
+    $code = Code::latest()->first();
+		return view('students.register', compact('code'));
 	}
 
 	/*

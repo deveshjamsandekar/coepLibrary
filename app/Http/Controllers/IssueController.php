@@ -9,6 +9,7 @@ use App\Book;
 use App\Student;
 use Carbon\Carbon;
 use Mail;
+use App\Code;
 class IssueController extends Controller
 {
   public function __construct() {
@@ -19,7 +20,8 @@ class IssueController extends Controller
    */
   public function create()
   {
-    return view('issue.index');
+    $code = Code::latest()->first();
+    return view('issue.index', compact('code'));
   }
 
   public function info(Request $request)
