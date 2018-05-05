@@ -70,7 +70,8 @@ class StudentsController extends Controller
 	 */
 	public function edit(Student $student)
 	{
-		return view('students.edit', compact('student'));
+    $code = Code::latest()->first();
+		return view('students.edit', compact('student', 'code'));
 	}
 
 	/*``

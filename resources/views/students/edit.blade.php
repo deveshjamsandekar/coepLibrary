@@ -38,7 +38,7 @@
 					  </div>
             <div class="form-group">
 					    <label for="ibutton_no">IButton No.</label>
-					    <input type="text" class="form-control" name="ibutton_no" value="{{ $student->ibutton_no }}"  placeholder="Enter IButton No">
+					    <input type="text" class="form-control" name="ibutton_no" value="@if($student->ibutton_no) {{ $student->ibutton_no }} @else {{ $code->code }} @endif"  placeholder="Enter IButton No">
 					  </div>
             <div class="form-group">
               <td><img class="img-upload" src="/storage/uploads/{{ $student->profile_img }}" width=100 height=100></td>
